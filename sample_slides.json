@@ -1,0 +1,142 @@
+[
+  {
+    "sections": [
+      {
+        "type": "content_text",
+        "placeholderName": "Slide1TopLeftTitle",
+        "data": "Top Left Section Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "Slide1TopLeftContent",
+        "data": "This is the top-left text content. It spans multiple lines. This section is for detailed text. This is the top-left text content. It spans multiple lines. This section is for detailed text. This is the top-left text content. It spans multiple lines. This section is for detailed text. This is the top-left text content. It spans multiple lines. This section is for detailed text. This is the top-left text content. It spans multiple lines. This section is for detailed text.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "image",
+        "placeholderName": "Slide1TopRightImage",
+        "imageUrl": "https://picsum.photos/600/300?random=1"
+      },
+      {
+        "type": "image",
+        "placeholderName": "Slide1BottomLeftImage",
+        "imageUrl": "https://picsum.photos/600/300?random=2"
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "Slide1BottomRightTitle",
+        "data": "Bottom Right Section Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "Slide1BottomRightContent",
+        "data": "This is the bottom-right text content. It spans multiple lines. This section is for detailed text. This is the bottom-right text content. It spans multiple lines. This section is for detailed text. This is the bottom-right text content. It spans multiple lines. This section is for detailed text. This is the bottom-right text content. It spans multiple lines. This section is for detailed text. This is the bottom-right text content. It spans multiple lines. This section is for detailed text.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      }
+    ],
+    "speakerNotes": "This slide demonstrates a 2x2 layout with text and images, now with titles above the text sections."
+  },
+  {
+    "sections": [
+      {
+        "type": "image",
+        "placeholderName": "Slide2LeftImage",
+        "imageUrl": "https://picsum.photos/600/650?random=3"
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "Slide2RightTitle1",
+        "data": "First Section Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "Slide2RightContent1",
+        "data": "This is the first section's content on the right side of the second slide. It provides details for the first topic. This content spans multiple lines to demonstrate text wrapping within the text box.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "Slide2RightTitle2",
+        "data": "Second Section Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "Slide2RightContent2",
+        "data": "This is the second section's content on the right side of the second slide. It continues the discussion with more details. This section also spans multiple lines to show text wrapping.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      }
+    ],
+    "speakerNotes": "This is the second slide, featuring an image on the left and two title+content sections on the right."
+  },
+  {
+    "sections": [
+      {
+        "type": "image",
+        "placeholderName": "Slide3TopLeftImage",
+        "imageUrl": "https://picsum.photos/600/350?random=4"
+      },
+      {
+        "type": "image",
+        "placeholderName": "Slide3BottomLeftImage1",
+        "imageUrl": "https://picsum.photos/600/100?random=5"
+      },
+      {
+        "type": "image",
+        "placeholderName": "Slide3BottomLeftImage2",
+        "imageUrl": "https://picsum.photos/600/100?random=6"
+      },
+      {
+        "type": "image",
+        "placeholderName": "Slide3BottomLeftImage3",
+        "imageUrl": "https://picsum.photos/600/100?random=7"
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "Slide3RightTitle",
+        "data": "Third Slide Main Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "Slide3RightContent",
+        "data": "This is the main content for the third slide. It provides an overview of the topic being discussed.\n\n- First bullet point with details.\n- Second bullet point with more information.\n- Third bullet point to conclude.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      }
+    ],
+    "speakerNotes": "This is the third slide, featuring four images on the left (one large, three small) and a title with content (including bullets) on the right."
+  }
+]
