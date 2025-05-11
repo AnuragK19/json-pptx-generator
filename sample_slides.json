@@ -100,23 +100,17 @@
     "sections": [
       {
         "type": "image",
-        "placeholderName": "Slide3TopLeftImage",
-        "imageUrl": "https://picsum.photos/600/350?random=4"
+        "placeholderName": "Slide3LeftImage",
+        "imageUrl": "https://picsum.photos/600/550?random=4"
       },
       {
-        "type": "image",
-        "placeholderName": "Slide3BottomLeftImage1",
-        "imageUrl": "https://picsum.photos/600/100?random=5"
-      },
-      {
-        "type": "image",
-        "placeholderName": "Slide3BottomLeftImage2",
-        "imageUrl": "https://picsum.photos/600/100?random=6"
-      },
-      {
-        "type": "image",
-        "placeholderName": "Slide3BottomLeftImage3",
-        "imageUrl": "https://picsum.photos/600/100?random=7"
+        "type": "content_text",
+        "placeholderName": "Slide3LeftCaption",
+        "data": "Caption for the image on the left side of the third slide.",
+        "fontSize": 12,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
       },
       {
         "type": "content_text",
@@ -130,13 +124,13 @@
       {
         "type": "content_text",
         "placeholderName": "Slide3RightContent",
-        "data": "This is the main content for the third slide. It provides an overview of the topic being discussed.\n\n- First bullet point with details.\n- Second bullet point with more information.\n- Third bullet point to conclude.",
+        "data": "This is the main content for the third slide. It provides an overview of the topic being discussed. This content spans multiple lines to demonstrate text wrapping within the text box.",
         "fontSize": 14,
         "isBold": false,
         "colorHex": "0xffffffff",
         "alignmentX": -1
       }
     ],
-    "speakerNotes": "This is the third slide, featuring four images on the left (one large, three small) and a title with content (including bullets) on the right."
+    "speakerNotes": "This is the third slide, featuring an image with a caption on the left and a title with content on the right."
   }
 ]

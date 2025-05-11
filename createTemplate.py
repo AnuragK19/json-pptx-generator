@@ -201,77 +201,45 @@ def add_slide_with_image_text_layout(slide_prefix):
         for run in paragraph.runs:
             run.font.size = Pt(14)
 
-# Function to add the third slide with four images on the left and title+content on the right
-def add_slide3_with_four_images_and_content():
+# Function to add the third slide with an image and caption on the left, and title+content on the right
+def add_slide3_with_image_caption_and_content():
     slide = prs.slides.add_slide(blank_layout)
 
-    # Left Side: Four images
-    # Shape 1: Large image at the top (50% width, ~50% height)
-    shape_image1 = slide.shapes.add_shape(
+    # Left Side: Image and caption
+    # Shape 1: Large image at the top (50% width, ~80% height)
+    shape_image = slide.shapes.add_shape(
         MSO_SHAPE.RECTANGLE,
         left=Inches(0.5),
         top=Inches(0.5),
         width=Inches(6.0),
-        height=Inches(3.5)
+        height=Inches(5.5)
     )
-    shape_image1.name = "Slide3TopLeftImage"
-    shape_image1.text = "Slide3 Top Left Image Placeholder"
-    text_frame_image1 = shape_image1.text_frame
-    for paragraph in text_frame_image1.paragraphs:
+    shape_image.name = "Slide3LeftImage"
+    shape_image.text = "Slide3 Left Image Placeholder"
+    text_frame_image = shape_image.text_frame
+    for paragraph in text_frame_image.paragraphs:
         paragraph.alignment = PP_ALIGN.CENTER
         for run in paragraph.runs:
             run.font.size = Pt(14)
 
-    # Shape 2: First small image below (50% width, ~16% height)
-    shape_image2 = slide.shapes.add_shape(
-        MSO_SHAPE.RECTANGLE,
+    # Shape 2: Caption below the image (50% width, ~20% height)
+    text_box_caption = slide.shapes.add_textbox(
         left=Inches(0.5),
-        top=Inches(4.1),
+        top=Inches(6.1),
         width=Inches(6.0),
         height=Inches(1.0)
     )
-    shape_image2.name = "Slide3BottomLeftImage1"
-    shape_image2.text = "Slide3 Bottom Left Image 1 Placeholder"
-    text_frame_image2 = shape_image2.text_frame
-    for paragraph in text_frame_image2.paragraphs:
-        paragraph.alignment = PP_ALIGN.CENTER
-        for run in paragraph.runs:
-            run.font.size = Pt(12)
-
-    # Shape 3: Second small image below (50% width, ~16% height)
-    shape_image3 = slide.shapes.add_shape(
-        MSO_SHAPE.RECTANGLE,
-        left=Inches(0.5),
-        top=Inches(5.2),
-        width=Inches(6.0),
-        height=Inches(1.0)
-    )
-    shape_image3.name = "Slide3BottomLeftImage2"
-    shape_image3.text = "Slide3 Bottom Left Image 2 Placeholder"
-    text_frame_image3 = shape_image3.text_frame
-    for paragraph in text_frame_image3.paragraphs:
-        paragraph.alignment = PP_ALIGN.CENTER
-        for run in paragraph.runs:
-            run.font.size = Pt(12)
-
-    # Shape 4: Third small image below (50% width, ~16% height)
-    shape_image4 = slide.shapes.add_shape(
-        MSO_SHAPE.RECTANGLE,
-        left=Inches(0.5),
-        top=Inches(6.3),
-        width=Inches(6.0),
-        height=Inches(1.0)
-    )
-    shape_image4.name = "Slide3BottomLeftImage3"
-    shape_image4.text = "Slide3 Bottom Left Image 3 Placeholder"
-    text_frame_image4 = shape_image4.text_frame
-    for paragraph in text_frame_image4.paragraphs:
-        paragraph.alignment = PP_ALIGN.CENTER
+    text_box_caption.name = "Slide3LeftCaption"
+    text_frame_caption = text_box_caption.text_frame
+    text_frame_caption.text = "Slide3 Left Caption Placeholder"
+    text_frame_caption.word_wrap = True
+    for paragraph in text_frame_caption.paragraphs:
+        paragraph.alignment = PP_ALIGN.LEFT
         for run in paragraph.runs:
             run.font.size = Pt(12)
 
     # Right Side: Title and content
-    # Shape 5: Title at the top (50% width, smaller height for title)
+    # Shape 3: Title at the top (50% width, smaller height for title)
     text_box_title = slide.shapes.add_textbox(
         left=Inches(6.83),
         top=Inches(0.5),
@@ -288,7 +256,7 @@ def add_slide3_with_four_images_and_content():
             run.font.size = Pt(18)
             run.font.bold = True
 
-    # Shape 6: Content below the title (50% width, full height minus title)
+    # Shape 4: Content below the title (50% width, full height minus title)
     text_box_content = slide.shapes.add_textbox(
         left=Inches(6.83),
         top=Inches(1.1),
@@ -310,8 +278,8 @@ add_slide1_with_2x2_layout()
 # Add second slide (Slide2) with image on the left and two title+content sections on the right
 add_slide_with_image_text_layout("Slide2")
 
-# Add third slide (Slide3) with four images on the left and title+content on the right
-add_slide3_with_four_images_and_content()
+# Add third slide (Slide3) with image and caption on the left, and title+content on the right
+add_slide3_with_image_caption_and_content()
 
 # Save the presentation as a template (.potx)
 prs.save("custom_2x2_template.potx")

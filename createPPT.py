@@ -1,6 +1,6 @@
 from pptx import Presentation
 from pptx.util import Pt
-from pptx.enum.text import PP_ALIGN, PP_PARAGRAPH_ALIGNMENT
+from pptx.enum.text import PP_ALIGN
 from pptx.dml.color import RGBColor
 import json
 import requests
@@ -102,30 +102,15 @@ for slide_idx, slide_data in enumerate(slides_data):
         if section["type"] == "content_text":
             text_frame = shape.text_frame
             text_frame.clear()
+            text_frame.text = section["data"].replace("\n", "\r\n")
+            text_frame.word_wrap = True
             
-            # Split the text into paragraphs
-            paragraphs = section["data"].replace("\r\n", "\n").split("\n")
-            
-            for para_text in paragraphs:
-                # Add a new paragraph
-                p = text_frame.add_paragraph()
-                
-                # Check if the paragraph should be a bullet point
-                if para_text.strip().startswith("- "):
-                    p.text = para_text.strip()[2:]  # Remove the "- " prefix
-                    p.level = 0  # Bullet level (0 for top-level bullets)
-                    p.bullet = True  # Enable bullet
-                else:
-                    p.text = para_text.strip()
-                
-                # Apply paragraph-level formatting
-                p.alignment = get_alignment(section["alignmentX"])
-                for run in p.runs:
+            for paragraph in text_frame.paragraphs:
+                paragraph.alignment = get_alignment(section["alignmentX"])
+                for run in paragraph.runs:
                     run.font.size = Pt(section["fontSize"])
                     run.font.bold = section["isBold"]
                     run.font.color.rgb = hex_to_rgb(section["colorHex"])
-            
-            text_frame.word_wrap = True
 
         elif section["type"] == "image":
             image_url = section.get("imageUrl")
