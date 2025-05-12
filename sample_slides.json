@@ -3,8 +3,36 @@
     "sections": [
       {
         "type": "content_text",
-        "placeholderName": "Slide1TopLeftTitle",
-        "data": "Top Left Section Title",
+        "placeholderName": "TitleSlideTitle",
+        "data": "Welcome to the Presentation",
+        "fontSize": 44,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "TitleSlideSubtitle",
+        "data": "An Overview of Our Project",
+        "fontSize": 24,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      },
+      {
+        "type": "image",
+        "placeholderName": "TitleSlideLogo",
+        "imageUrl": "https://picsum.photos/200/100?random=1"
+      }
+    ],
+    "speakerNotes": "This is the title slide to introduce the presentation."
+  },
+  {
+    "sections": [
+      {
+        "type": "content_text",
+        "placeholderName": "GridTopLeftTitle",
+        "data": "Section 1 Title",
         "fontSize": 18,
         "isBold": true,
         "colorHex": "0xffffffff",
@@ -12,8 +40,8 @@
       },
       {
         "type": "content_text",
-        "placeholderName": "Slide1TopLeftContent",
-        "data": "This is the top-left text content. It spans multiple lines. This section is for detailed text. This is the top-left text content. It spans multiple lines. This section is for detailed text. This is the top-left text content. It spans multiple lines. This section is for detailed text. This is the top-left text content. It spans multiple lines. This section is for detailed text. This is the top-left text content. It spans multiple lines. This section is for detailed text.",
+        "placeholderName": "GridTopLeftContent",
+        "data": "This is the content for the top-left section. It provides details about the first topic.",
         "fontSize": 14,
         "isBold": false,
         "colorHex": "0xffffffff",
@@ -21,18 +49,18 @@
       },
       {
         "type": "image",
-        "placeholderName": "Slide1TopRightImage",
-        "imageUrl": "https://picsum.photos/600/300?random=1"
-      },
-      {
-        "type": "image",
-        "placeholderName": "Slide1BottomLeftImage",
+        "placeholderName": "GridTopRightImage",
         "imageUrl": "https://picsum.photos/600/300?random=2"
       },
       {
+        "type": "image",
+        "placeholderName": "GridBottomLeftImage",
+        "imageUrl": "https://picsum.photos/600/300?random=3"
+      },
+      {
         "type": "content_text",
-        "placeholderName": "Slide1BottomRightTitle",
-        "data": "Bottom Right Section Title",
+        "placeholderName": "GridBottomRightTitle",
+        "data": "Section 2 Title",
         "fontSize": 18,
         "isBold": true,
         "colorHex": "0xffffffff",
@@ -40,73 +68,27 @@
       },
       {
         "type": "content_text",
-        "placeholderName": "Slide1BottomRightContent",
-        "data": "This is the bottom-right text content. It spans multiple lines. This section is for detailed text. This is the bottom-right text content. It spans multiple lines. This section is for detailed text. This is the bottom-right text content. It spans multiple lines. This section is for detailed text. This is the bottom-right text content. It spans multiple lines. This section is for detailed text. This is the bottom-right text content. It spans multiple lines. This section is for detailed text.",
+        "placeholderName": "GridBottomRightContent",
+        "data": "This is the content for the bottom-right section. It provides details about the second topic.",
         "fontSize": 14,
         "isBold": false,
         "colorHex": "0xffffffff",
         "alignmentX": -1
       }
     ],
-    "speakerNotes": "This slide demonstrates a 2x2 layout with text and images, now with titles above the text sections."
+    "speakerNotes": "This slide uses a 2x2 grid layout to present two sections with images."
   },
   {
     "sections": [
       {
         "type": "image",
-        "placeholderName": "Slide2LeftImage",
-        "imageUrl": "https://picsum.photos/600/650?random=3"
-      },
-      {
-        "type": "content_text",
-        "placeholderName": "Slide2RightTitle1",
-        "data": "First Section Title",
-        "fontSize": 18,
-        "isBold": true,
-        "colorHex": "0xffffffff",
-        "alignmentX": -1
-      },
-      {
-        "type": "content_text",
-        "placeholderName": "Slide2RightContent1",
-        "data": "This is the first section's content on the right side of the second slide. It provides details for the first topic. This content spans multiple lines to demonstrate text wrapping within the text box.",
-        "fontSize": 14,
-        "isBold": false,
-        "colorHex": "0xffffffff",
-        "alignmentX": -1
-      },
-      {
-        "type": "content_text",
-        "placeholderName": "Slide2RightTitle2",
-        "data": "Second Section Title",
-        "fontSize": 18,
-        "isBold": true,
-        "colorHex": "0xffffffff",
-        "alignmentX": -1
-      },
-      {
-        "type": "content_text",
-        "placeholderName": "Slide2RightContent2",
-        "data": "This is the second section's content on the right side of the second slide. It continues the discussion with more details. This section also spans multiple lines to show text wrapping.",
-        "fontSize": 14,
-        "isBold": false,
-        "colorHex": "0xffffffff",
-        "alignmentX": -1
-      }
-    ],
-    "speakerNotes": "This is the second slide, featuring an image on the left and two title+content sections on the right."
-  },
-  {
-    "sections": [
-      {
-        "type": "image",
-        "placeholderName": "Slide3LeftImage",
+        "placeholderName": "ImageCaptionLeftImage",
         "imageUrl": "https://picsum.photos/600/550?random=4"
       },
       {
         "type": "content_text",
-        "placeholderName": "Slide3LeftCaption",
-        "data": "Caption for the image on the left side of the third slide.",
+        "placeholderName": "ImageCaptionLeftCaption",
+        "data": "Caption for the image on the left side.",
         "fontSize": 12,
         "isBold": false,
         "colorHex": "0xffffffff",
@@ -114,8 +96,8 @@
       },
       {
         "type": "content_text",
-        "placeholderName": "Slide3RightTitle",
-        "data": "Third Slide Main Title",
+        "placeholderName": "ImageCaptionRightTitle",
+        "data": "Main Title",
         "fontSize": 18,
         "isBold": true,
         "colorHex": "0xffffffff",
@@ -123,14 +105,267 @@
       },
       {
         "type": "content_text",
-        "placeholderName": "Slide3RightContent",
-        "data": "This is the main content for the third slide. It provides an overview of the topic being discussed. This content spans multiple lines to demonstrate text wrapping within the text box.",
+        "placeholderName": "ImageCaptionRightContent",
+        "data": "This is the main content. It provides an overview of the topic being discussed.",
         "fontSize": 14,
         "isBold": false,
         "colorHex": "0xffffffff",
         "alignmentX": -1
       }
     ],
-    "speakerNotes": "This is the third slide, featuring an image with a caption on the left and a title with content on the right."
+    "speakerNotes": "This slide features an image with a caption on the left and content on the right."
+  },
+  {
+    "sections": [
+      {
+        "type": "image",
+        "placeholderName": "ImageTwoSectionsLeftImage",
+        "imageUrl": "https://picsum.photos/600/650?random=5"
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ImageTwoSectionsRightTitle1",
+        "data": "Section 1 Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ImageTwoSectionsRightContent1",
+        "data": "Content for the first section on the right side.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ImageTwoSectionsRightTitle2",
+        "data": "Section 2 Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ImageTwoSectionsRightContent2",
+        "data": "Content for the second section on the right side.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      }
+    ],
+    "speakerNotes": "This slide has an image on the left and two sections on the right."
+  },
+  {
+    "sections": [
+      {
+        "type": "image",
+        "placeholderName": "FullImageOverlayImage",
+        "imageUrl": "https://picsum.photos/1333/750?random=6"
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "FullImageOverlayText",
+        "data": "Overlay Text on Image",
+        "fontSize": 32,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      }
+    ],
+    "speakerNotes": "This slide features a full-slide image with overlay text."
+  },
+  {
+    "sections": [
+      {
+        "type": "content_text",
+        "placeholderName": "ThreeColumnsTitle1",
+        "data": "Column 1 Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ThreeColumnsContent1",
+        "data": "Content for the first column.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ThreeColumnsTitle2",
+        "data": "Column 2 Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ThreeColumnsContent2",
+        "data": "Content for the second column.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ThreeColumnsTitle3",
+        "data": "Column 3 Title",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ThreeColumnsContent3",
+        "data": "Content for the third column.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      }
+    ],
+    "speakerNotes": "This slide uses a three-column layout."
+  },
+  {
+    "sections": [
+      {
+        "type": "content_text",
+        "placeholderName": "TitleTwoImagesTitle",
+        "data": "Slide Title",
+        "fontSize": 32,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      },
+      {
+        "type": "image",
+        "placeholderName": "TitleTwoImagesLeftImage",
+        "imageUrl": "https://picsum.photos/600/400?random=7"
+      },
+      {
+        "type": "image",
+        "placeholderName": "TitleTwoImagesRightImage",
+        "imageUrl": "https://picsum.photos/600/400?random=8"
+      }
+    ],
+    "speakerNotes": "This slide has a title with two images below."
+  },
+  {
+    "sections": [
+      {
+        "type": "content_text",
+        "placeholderName": "ComparisonLeftTitle",
+        "data": "Option 1",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ComparisonLeftContent",
+        "data": "Details about Option 1.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ComparisonRightTitle",
+        "data": "Option 2",
+        "fontSize": 18,
+        "isBold": true,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "ComparisonRightContent",
+        "data": "Details about Option 2.",
+        "fontSize": 14,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": -1
+      }
+    ],
+    "speakerNotes": "This slide compares two options side by side."
+  },
+  {
+    "sections": [
+      {
+        "type": "content_text",
+        "placeholderName": "QuoteText",
+        "data": "This is an inspiring quote to motivate the audience.",
+        "fontSize": 28,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "QuoteAttribution",
+        "data": "- Famous Person",
+        "fontSize": 18,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      }
+    ],
+    "speakerNotes": "This slide presents a motivational quote."
+  },
+  {
+    "sections": [
+      {
+        "type": "content_text",
+        "placeholderName": "TimelineText1",
+        "data": "Milestone 1: Project Start",
+        "fontSize": 12,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "TimelineText2",
+        "data": "Milestone 2: Phase 1 Complete",
+        "fontSize": 12,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "TimelineText3",
+        "data": "Milestone 3: Phase 2 Complete",
+        "fontSize": 12,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      },
+      {
+        "type": "content_text",
+        "placeholderName": "TimelineText4",
+        "data": "Milestone 4: Project End",
+        "fontSize": 12,
+        "isBold": false,
+        "colorHex": "0xffffffff",
+        "alignmentX": 0
+      }
+    ],
+    "speakerNotes": "This slide shows a project timeline with four milestones."
   }
 ]
